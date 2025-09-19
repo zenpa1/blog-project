@@ -16,7 +16,7 @@ router.get("/", async (req: Request, res: Response) => {
 // GET /posts/:id (Retrieve a single post by ID)
 router.get("/:id", async (req: Request, res: Response) => {
     try {
-        const post = await Post.findById(req.params.id);
+        const post = await Post.findById(req.params.id).populate("comments");  // Using populate to get post with comments
 
         if (!post) {
             return res.status(404).json({ error: "Post not found. "});

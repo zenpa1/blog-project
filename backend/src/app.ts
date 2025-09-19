@@ -4,6 +4,7 @@ import cors from "cors";  // Cross-Origin Resource Sharing
 import bodyParser from "body-parser"  // Middleware simplifying data extraction
 import mongoose from "mongoose";  // Used for connecting to MongoDB
 import postsRouter from "./routes/posts.js";
+import commentsRouter from "./routes/comments.js";
 import { initialMessage } from "./helper.js";
 
 const app = express();  // Start server
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api/posts", postsRouter);
+app.use("/api/comments", commentsRouter);
 
 // Health check endpoint
 app.get("/api/health", (req: Request, res: Response) => {
