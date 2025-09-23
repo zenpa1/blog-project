@@ -1,7 +1,5 @@
 # blog-project
 
----
-
 ## Project Overview
 
 This is a simple full-stack blog application which includes:
@@ -18,22 +16,16 @@ Features:
 
 This repository contains both the backend and the frontend under the `backend/` and `frontend/` folders respectively.
 
----
-
 ## Tech Stack
 
 - Backend: Node.js, Express, TypeScript, Mongoose (MongoDB)
 - Frontend: React, TypeScript, Bootstrap 5
 - Packaging: npm
 
----
-
 ## Design Decisions
 
 - Separation of concerns: Backend handles data and business logic; frontend handles presentation and user interaction. All files are contained in a single repository in order to pass all files at once.
 - Type safety: TypeScript is used in backend and frontend to minimize runtime type errors and help readability.
-
----
 
 ## Setup & Run (local development)
 
@@ -120,8 +112,6 @@ This will connect to the configured MongoDB, clear `posts` and `comments` collec
 Notes:
 - Seeding is destructive for those collections — only run against a development database.
 - If you use Docker, ensure the MongoDB container is running before seeding (or run the seed inside a container or after starting Docker services).
-
----
 
 ## API Reference
 
