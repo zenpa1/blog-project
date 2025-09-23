@@ -1,7 +1,5 @@
 # blog-project
 
-## Project Overview
-
 This is a simple full-stack blog application which includes:
 
 - A Node.js + Express backend that exposes a JSON REST API for posts and comments, persisting data in MongoDB
