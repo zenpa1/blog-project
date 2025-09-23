@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          My Blog
+          bloggers
         </Link>
         <div className="navbar-nav">
           <Link className="nav-link" to="/">

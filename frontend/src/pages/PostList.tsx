@@ -32,7 +32,7 @@ const PostList: React.FC = () => {
   const handleRetry = () => {
     setError(null);
     setLoading(true);
-    // We'll let the useEffect hook handle the refetch
+    // useEffect will hook handle the refetch
     window.location.reload();
   };
 
